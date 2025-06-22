@@ -1,5 +1,13 @@
 {
-  "src/**/*{.ts,.tsx}": ["eslint --fix", "prettier --write --ignore-unknown"],
-  "src/**/*.{css}": ["stylelint --fix", "prettier --write --ignore-unknown"],
-  "*.{json,md}": ["prettier --write --ignore-unknown"]
+  "src/**/*{.ts,.tsx}": [
+    "eslint --fix",
+    "prettier --write --ignore-unknown"
+  ],
+  "src/**/*.css": [
+    "stylelint --fix",
+    "prettier --write --ignore-unknown"
+  ],
+  "*.{json,md}": [
+    "prettier --write --ignore-unknown"
+  ]
 }
