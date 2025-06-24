@@ -1,4 +1,65 @@
 @import 'tailwindcss';
 
-/* #root {
-} */
+/* some reset styles */
+*::before,
+*::after {
+  display: inline-block;
+}
+
+img {
+  vertical-align: top;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+}
+
+html,
+body {
+  block-size: 100%;
+}
+
+/* some reset styles end */
+
+:root {
+  --container-width: 1125px;
+  --container-padding: 15px;
+}
+
+@utility app-container {
+  max-inline-size: calc(var(--container-width) + 2 * var(--container-padding));
+  margin-inline: auto;
+  padding-inline: var(--container-padding);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #fff;
+  background-color: #252b42;
+  font-size: 18px;
+}
+
+#root {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  block-size: 100%;
+}
+
+#root > main {
+  flex-grow: 1;
+}
