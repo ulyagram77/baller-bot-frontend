@@ -1,14 +1,17 @@
 import type { ComponentPropsWithoutRef, FC } from 'react';
+import { NavLink } from 'react-router';
+import { menuLinks } from '@/core/constants';
 import { cn } from '@/core/utils/tailwind-utils';
-
-const menuLinks = [
-  { text: 'Home', href: '#' },
-  { text: 'Features', href: '#' },
-];
 
 export const Header: FC<ComponentPropsWithoutRef<'header'>> = ({
   className,
 }) => {
+  const getNavLinkClassName = ({ isActive }: { isActive: boolean }) =>
+    cn(
+      'text-white transition-all hover:font-bold',
+      isActive && 'text-[#F15B07]',
+    );
+
   return (
     <header className={cn('p-14', className)}>
       <div className="app-container">
@@ -16,12 +19,9 @@ export const Header: FC<ComponentPropsWithoutRef<'header'>> = ({
           <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-2.5">
             {menuLinks.map(({ text, href }) => (
               <li key={text}>
-                <a
-                  className="text-white transition-colors hover:text-[#F15B07]"
-                  href={href}
-                >
+                <NavLink className={getNavLinkClassName} to={href}>
                   {text}
-                </a>
+                </NavLink>
               </li>
             ))}
           </ul>

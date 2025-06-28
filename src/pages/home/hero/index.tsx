@@ -2,7 +2,7 @@ import { introImg } from '@/assets/img';
 
 export const Hero = () => {
   return (
-    <section className="pt-24">
+    <section className="relative z-10 pt-24">
       <div className="app-container">
         <div className="mb-24 grid justify-center gap-y-12 text-center">
           <div className="space-y-4">
