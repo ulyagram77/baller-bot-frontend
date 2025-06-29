@@ -24,7 +24,8 @@ export const Hero = () => {
           <div>
             <a
               className="rounded-4xl bg-white px-14 py-4 text-xl font-bold text-[#2091F9]"
-              href="#"
+              href="https://t.me/hoop33_bot
+"
             >
               Try For Free
             </a>
