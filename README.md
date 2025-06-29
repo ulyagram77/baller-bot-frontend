@@ -2,10 +2,18 @@
 
 ## Table of Contents
 
+- [Requirements](#requirements)
 - [Tech Stack](#tech-stack)
 - [Run Locally](#run-locally)
+- [Environment Variables](#environment-variables)
 - [Other Commands](#other-commands)
 - [Code Quality Tools](#code-quality-tools)
+
+## Requirements
+
+- Node.js
+- Configured `.env` file
+- Yarn (optional)
 
 ## Tech Stack
 
@@ -36,6 +44,15 @@ Start the development server
 ```bash
   yarn dev
 ```
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+| Parameter       | Description                                           |
+| :-------------- | :---------------------------------------------------- |
+| `VITE_API_URL`  | URL of the `backend baller bot API` that will be used |
+| `VITE_BASE_URL` | base URL of the client side                           |
 
 ## Other Commands
 
