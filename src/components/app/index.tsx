@@ -1,4 +1,5 @@
 import { Route, Routes } from 'react-router';
+import { ROUTES } from '@/core/constants';
 import { AboutPage } from '@/pages/about';
 import { HomePage } from '@/pages/home';
 import { NotFoundPage } from '@/pages/not-found';
@@ -10,9 +11,9 @@ const App = () => {
       <Header className="z-10" />
       <main>
         <Routes>
-          <Route index path="/" element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="*" element={<NotFoundPage />} />
+          <Route index path={ROUTES.HOME} element={<HomePage />} />
+          <Route path={ROUTES.ABOUT} element={<AboutPage />} />
+          <Route path={ROUTES.NOT_FOUND} element={<NotFoundPage />} />
         </Routes>
       </main>
     </>
