@@ -17,6 +17,7 @@ const AboutPage = () => {
           content="about baller bot, telegram basketball, bot features, basketball 33 rules"
         />
         <link rel="canonical" href={`${BASE_URL}${ROUTES.ABOUT}`} />
+        <meta name="robots" content="index, follow" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
@@ -29,7 +30,7 @@ const AboutPage = () => {
           property="og:description"
           content="Learn more about Baller Bot, the innovative Telegram bot that brings Basketball 33 game to your chats with animated stickers and interactive gameplay."
         />
-        <meta property="og:image" content="/meta-image.png" />
+        <meta property="og:image" content="/meta-about.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -42,10 +43,10 @@ const AboutPage = () => {
           property="twitter:description"
           content="Learn more about Baller Bot, the innovative Telegram bot that brings Basketball 33 game to your chats with animated stickers and interactive gameplay."
         />
-        <meta property="twitter:image" content="/meta-image.png" />
+        <meta property="twitter:image" content="/meta-about.png" />
       </Helmet>
 
-      <div>AboutPage</div>
+      <h1>AboutPage</h1>
     </>
   );
 };

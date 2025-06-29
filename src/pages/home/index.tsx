@@ -18,6 +18,7 @@ const HomePage = () => {
           content="telegram bot, basketball game, 33 basketball, telegram games, basketball stickers, interactive bot"
         />
         <link rel="canonical" href={BASE_URL} />
+        <meta name="robots" content="index, follow" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />

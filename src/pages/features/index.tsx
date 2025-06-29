@@ -17,6 +17,7 @@ const FeaturesPage = () => {
           content="baller bot features, telegram bot games, basketball stickers, multiplayer telegram, basketball 33 features"
         />
         <link rel="canonical" href={`${BASE_URL}${ROUTES.FEATURES}`} />
+        <meta name="robots" content="index, follow" />
 
         {/* <!-- Open Graph / Facebook --> */}
         <meta property="og:type" content="website" />
@@ -29,7 +30,7 @@ const FeaturesPage = () => {
           property="og:description"
           content="Discover all the amazing features of Baller Bot: animated stickers, real-time gameplay, Basketball 33 rules, multiplayer support and more!"
         />
-        <meta property="og:image" content="/meta-image.png" />
+        <meta property="og:image" content="/meta-features.png" />
 
         {/* <!-- Twitter --> */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -45,9 +46,9 @@ const FeaturesPage = () => {
           property="twitter:description"
           content="Discover all the amazing features of Baller Bot: animated stickers, real-time gameplay, Basketball 33 rules, multiplayer support and more!"
         />
-        <meta property="twitter:image" content="/meta-image.png" />
+        <meta property="twitter:image" content="/meta-features.png" />
       </Helmet>
-      <div className="relative z-10">Features</div>
+      <h1 className="relative z-10">Features</h1>
     </>
   );
 };
