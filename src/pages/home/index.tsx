@@ -3,7 +3,7 @@ import { BASE_URL } from '@/core/config';
 import { decoration } from '@/assets/img';
 import { Hero } from './hero';
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <>
       <Helmet>
@@ -54,3 +54,5 @@ export const HomePage = () => {
     </>
   );
 };
+
+export default HomePage;

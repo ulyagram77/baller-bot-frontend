@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { BASE_URL } from '@/core/config';
 import { ROUTES } from '@/core/constants';
 
-export const FeaturesPage = () => {
+const FeaturesPage = () => {
   return (
     <>
       <Helmet>
@@ -51,3 +51,5 @@ export const FeaturesPage = () => {
     </>
   );
 };
+
+export default FeaturesPage;

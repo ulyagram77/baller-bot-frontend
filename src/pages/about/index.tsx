@@ -2,7 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { BASE_URL } from '@/core/config';
 import { ROUTES } from '@/core/constants';
 
-export const AboutPage = () => {
+const AboutPage = () => {
   return (
     <>
       <Helmet>
@@ -49,3 +49,5 @@ export const AboutPage = () => {
     </>
   );
 };
+
+export default AboutPage;
